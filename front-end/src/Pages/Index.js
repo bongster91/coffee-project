@@ -1,11 +1,11 @@
 import React from 'react'
-import Collection from '../Components/Collection'
+import Products from '../Components/Products'
 
 export default function Index() {
     return (
         <div>
         <h2>Index</h2>
-        <Collection/>
+        <Products/>
         </div>
     )
 }
