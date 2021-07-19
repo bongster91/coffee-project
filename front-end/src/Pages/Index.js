@@ -4,7 +4,7 @@ import Products from '../Components/Products'
 export default function Index() {
     return (
         <div>
-        <h2>Index</h2>
+        <h2>Shop Collection</h2>
         <Products/>
         </div>
     )
