@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { apiURL } from "./util/apiURL.js";
+import { apiURL } from "../util/apiURL.js";
 
 const API = apiURL();
 
