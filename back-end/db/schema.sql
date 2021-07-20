@@ -1,6 +1,14 @@
-DROP TABLE IF EXISTS test;
+DROP DATABASE IF EXISTS coffees_db;
+CREATE DATABASE coffees_db;
 
-CREATE TABLE test (
+\c coffees_db;
+
+CREATE TABLE coffees (
     id SERIAL PRIMARY KEY, 
-    name TEXT
+    name TEXT,
+    price NUMERIC,
+    origin TEXT,
+    method TEXT
 );
+
+    -- image VARBINARY (max),
