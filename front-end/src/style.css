@@ -8,7 +8,7 @@ body {
 
 .coffee-collection {
     display: flex;
-    float: left;
+    flex-wrap: wrap;
 }
 
 .coffeeStyles {
