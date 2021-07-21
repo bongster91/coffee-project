@@ -22,6 +22,10 @@ export default function CoffeesComponent() {
 
   return (
     <div>
+      <br />
+      <br />
+      <br />
+      <h1>Data please</h1>
       <ol>
         {coffees.map((coffee) => {
           return (
