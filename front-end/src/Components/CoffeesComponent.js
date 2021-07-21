@@ -25,14 +25,10 @@ export default function CoffeesComponent() {
       <ol>
         {coffees.map((coffee) => {
           return (
-          <li
-            key={coffee.id}>
-              <SingularCoffee
-                coffee={coffee}
-            />
-          </li>
-        )
-})}
+            <li key={coffee.id}>
+                <SingularCoffee coffee={coffee} />
+            </li>)
+        })}
       </ol>
     </div>
   );
