@@ -6,9 +6,10 @@ body {
     height: 1100px;
 }
 
-.coffeeContainer {
+.coffee-collection {
     display: flex;
-    float: left;
+    flex-wrap: wrap;
+
 }
 
 .coffeeStyles {
