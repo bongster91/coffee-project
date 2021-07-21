@@ -22,16 +22,18 @@ export default function CoffeesComponent() {
 
   return (
     <div>
-      <ul>
+      <ol>
         {coffees.map((coffee) => {
+          return (
           <li
             key={coffee.id}>
               <SingularCoffee
                 coffee={coffee}
             />
           </li>
+        )
 })}
-      </ul>
+      </ol>
     </div>
   );
 }
