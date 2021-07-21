@@ -6,4 +6,20 @@ body {
     height: 1100px;
 }
 
+.coffeeContainer {
+    display: flex;
+    float: left;
+}
 
+.coffeeStyles {
+    color: Whitesmoke;
+    border: 1px solid whitesmoke;
+    width: 200px;
+    margin: 3em;
+    margin-top: 6em;
+    padding: 15px;
+}
+
+.coffeeStyles p {
+    padding: 10px;
+}

@@ -38,6 +38,8 @@ export default function NavBar() {
 
 
 
+
+
     return (
         <nav>
             {(toggleMenu || screenWidth > 500) && (
