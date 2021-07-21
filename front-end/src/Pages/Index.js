@@ -1,5 +1,5 @@
 import React from 'react'
-import Products from '../Components/Products'
+import Products from '../Components/CoffeesComponent'
 
 export default function Index() {
     return (
