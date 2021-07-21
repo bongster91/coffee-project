@@ -3,7 +3,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover, contain;
-    height: 1100px;
+    width: 100%;
 }
 
 .coffee-collection {

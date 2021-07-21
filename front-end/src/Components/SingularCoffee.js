@@ -7,8 +7,7 @@ const SingularCoffee = ({coffee}) => {
                 <h4>{coffee.name}</h4>
                 <br />
                 <p>{coffee.price}</p>
-                <h5>{coffee.origin}</h5>
-                <h5>{coffee.method}</h5>
+                <button>Details</button>
             </div>
         </div>
     )
