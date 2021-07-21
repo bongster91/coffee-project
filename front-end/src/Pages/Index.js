@@ -1,11 +1,11 @@
 import React from 'react'
-import Products from '../Components/CoffeesComponent'
+import SingularCoffee from "../Components/SingularCoffee";
 
-export default function Index() {
+export default function index() {
     return (
         <div>
         <h2>Index</h2>
-        <Products/>
+        <SingularCoffee />
         </div>
     )
 }

@@ -7,6 +7,7 @@ const SingularCoffee = ({coffee}) => {
             <h5>{coffee.price}</h5>
             <h5>{coffee.origin}</h5>
             <h5>{coffee.method}</h5>
+            console.log("coffee")
         </div>
     )
 }
