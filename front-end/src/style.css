@@ -14,6 +14,8 @@ body {
 
 .coffeeStyles {
     color: Whitesmoke;
+    background-color: #874b16b2;
+    text-align: center;
     border: 1px solid whitesmoke;
     width: 200px;
     margin: 3em;
