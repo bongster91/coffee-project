@@ -9,7 +9,6 @@ body {
 .coffee-collection {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .coffeeStyles {

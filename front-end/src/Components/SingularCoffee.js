@@ -2,7 +2,7 @@ import React from "react";
 
 const SingularCoffee = ({coffee}) => {
     return (
-        <div className="coffeeContainer">
+        <div>
             <div className="coffeeStyles">
                 <h4>{coffee.name}</h4>
                 <br />
