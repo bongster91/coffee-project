@@ -9,7 +9,8 @@ const SingularCoffee = ({coffee}) => {
 
                 <br />
 
-                <p>{coffee.price}</p>
+                <p>{coffee.method}</p>
+                <p>{coffee.origin}</p>
 
                 <Link className="nav-link" to={`/coffees/${coffee.id}`}>
                     <button>Details</button>
