@@ -26,3 +26,12 @@ body {
 .coffeeStyles p {
     padding: 10px;
 }
+
+.navList a {
+    text-decoration: none;
+}
+
+.navList a:hover {
+    font-family: "Decomart FF 4F";
+    color: rgb(2, 2, 2);
+}
