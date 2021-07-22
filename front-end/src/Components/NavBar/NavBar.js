@@ -42,9 +42,15 @@ export default function NavBar() {
             {(toggleMenu || screenWidth > 500) && (
                 <ul className="navList">
 
-                    <Link to="/"><img style={imgStyle} src={JavaScriptLogo} /></Link>
+                    <Link to="/">
+                        <img style={imgStyle} src={JavaScriptLogo} alt='logo' />
+                    </Link>
 
-                    <li className="items">JavaScript</li>
+                    <li className="items">
+                        <Link to='/coffees/new'>
+                            DIY Coffee
+                        </Link>
+                    </li>
 
                     <li className="items">
                         <Link to="/coffees">
@@ -52,14 +58,18 @@ export default function NavBar() {
                         </Link>
                     </li>
 
-                    <li className="items">About</li>
+                    <li className="items">
+                        <Link to='/about'>
+                            About
+                        </Link>
+                    </li>
             </ul>
             )}
 
                 <button
                     className="btn"
                     onClick={toggleNav}>
-                        <img style={styles} src={cup} />
+                        <img style={styles} src={cup} alt='cup' />
                 </button>
         </nav>
     )

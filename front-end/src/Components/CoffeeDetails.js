@@ -7,15 +7,13 @@ import axios from "axios";
 const API = apiURL();
 
 const CoffeeDetails = ({ history, match }) => {
-    const [details, setDetails] = useState([])
+    const [ details, setDetails ] = useState([])
     const { id } = match.params
 
-    console.log(id)
     useEffect(() => {
         axios.get(`${API}/coffees/${id}`)
                  .then((response) => {
                     setDetails(response.data)
-                    console.log(details)
                  },
                  (error) => {
                      console.log(error);
@@ -24,6 +22,18 @@ const CoffeeDetails = ({ history, match }) => {
                 )
                 .catch((c) => console.warn("catch", c))
     }, [id, history]);
+
+    const handleDelete = async () => {
+        await axios
+            .delete(`${API}/coffees/${id}`)
+            .then(
+                () => history.push('/coffees'),
+                (error) => console.warn(error)
+            )
+            .catch(
+                (c) => console.error(c)
+            );
+    };
 
     return (
         <div>
@@ -34,8 +44,19 @@ const CoffeeDetails = ({ history, match }) => {
             <br />
             <br />
            <img src={details.url} alt={details.alt}/>
+
             <h5 style={{color: "gold"}}>{details.name}</h5>
-            <h5></h5>
+            <h5>{details.price}</h5>
+
+            <Link to='/coffees'>
+                <button>Back</button>
+            </Link>
+
+            <Link to={`/coffees/${id}/edit`}>
+                <button>Edit {details.name}</button>
+            </Link>
+
+            <button onClick={handleDelete}>Delete {details.name}</button>
         </div>
     )
 }

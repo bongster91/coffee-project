@@ -1,4 +1,4 @@
-\ c coffees_db;
+\c coffees_db;
 INSERT INTO coffees (name, price, origin, method, url, alt)
 VALUES (
         'Home Brew',

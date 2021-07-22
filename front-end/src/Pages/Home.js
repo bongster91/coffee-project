@@ -31,7 +31,7 @@ export default function Home() {
 
 
                 <div>
-                    <img style={imgStyle} src={BrandLabel} />
+                    <img style={imgStyle} src={BrandLabel} alt='brand-label' />
                 </div>
             </div>
     )
