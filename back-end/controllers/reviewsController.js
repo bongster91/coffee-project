@@ -32,11 +32,16 @@ reviews.get("/:id", async (req, res) => {
 });
 
 //CREATE REVIEW
+<<<<<<< HEAD
 reviews.post("/", async(req, res)=>{
+=======
+reviews.post("/", async(req,res)=>{
+>>>>>>> e35853005cd8f91fef038506a7856fc012a0e95c
     const { coffee_id } = req.params;
+    const {review} = req.body
 
     try {
-        const review = createReview(req.body, coffee_id)
+        const review = createReview(review, coffee_id)
         res.status(200).json(review);
     
     } catch (error) {
