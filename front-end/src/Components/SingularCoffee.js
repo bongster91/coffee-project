@@ -11,7 +11,7 @@ const SingularCoffee = ({coffee}) => {
 
                 <p>{coffee.price}</p>
 
-                <Link to={`/coffees/${coffee.id}`}>
+                <Link className="nav-link" to={`/coffees/${coffee.id}`}>
                     <button>Details</button>
                 </Link>
             </div>
