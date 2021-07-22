@@ -1,5 +1,7 @@
 const express = require("express");
 const coffees = express.Router();
+const reviewsController = require("./reviewsController")
+
 const { 
   getAllCoffees, 
   getOneCoffee,
@@ -7,6 +9,8 @@ const {
   updateCoffee,
   deleteCoffee
 } = require("../queries/coffees");
+
+coffees.use("/:coffee_id/reviews", reviewsController)
 
 coffees.get("/", async (req, res) => {
   const allCoffees = await getAllCoffees();
