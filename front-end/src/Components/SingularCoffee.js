@@ -8,7 +8,7 @@ const SingularCoffee = ({coffee}) => {
                 <h4>{coffee.name}</h4>
 
                 <br />
-                
+
                 <p>{coffee.price}</p>
 
                 <Link to={`/coffees/${coffee.id}`}>
