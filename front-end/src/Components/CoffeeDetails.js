@@ -7,13 +7,13 @@ import axios from "axios";
 const API = apiURL();
 
 const CoffeeDetails = ({ history, match }) => {
-    const [ details, setDetails ] = useState([])
+    const [ coffee, setCoffee ] = useState([])
     const { id } = match.params
 
     useEffect(() => {
         axios.get(`${API}/coffees/${id}`)
                  .then((response) => {
-                    setDetails(response.data)
+                    setCoffee(response.data)
                  },
                  (error) => {
                      console.log(error);
@@ -44,20 +44,30 @@ const CoffeeDetails = ({ history, match }) => {
             <br />
             <br />
             <br />
-           <img src={details.url} alt={details.alt}/>
+           <img src={coffee.url} alt={coffee.alt}/>
+
 
             <h5 style={{fontSize: "20px"}}>{details.name}</h5>
             <h5>{details.price}</h5>
+
+            <h1 style={{color: "gold"}}>
+                {coffee.name}
+            </h1>
+            <h3>{coffee.price}</h3>
+            <h3>{coffee.method}</h3>
+            <h3>{coffee.origin}</h3>
+            
+
 
             <Link to='/coffees'>
                 <button>Back</button>
             </Link>
 
             <Link to={`/coffees/${id}/edit`}>
-                <button>Edit {details.name}</button>
+                <button>Edit {coffee.name}</button>
             </Link>
 
-            <button onClick={handleDelete}>Delete {details.name}</button>
+            <button onClick={handleDelete}>Delete {coffee.name}</button>
         </div>
     )
 }
