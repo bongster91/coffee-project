@@ -7,6 +7,7 @@ import Index from "./Pages/Index";
 
 import NavBar from "./Components/NavBar/NavBar";
 import Coffees from "./Components/CoffeesComponent";
+import CoffeeDetails from "./Components/CoffeeDetails";
 
 import "./style.css"
 
@@ -17,13 +18,20 @@ function App() {
      <Router>
       <NavBar/>
        <Switch>
+
        <Route exact path="/">
         <Home />
+       </Route>
+
+       <Route path="/coffees/:id">
+         <CoffeeDetails />
        </Route>
 
        <Route path="/coffees">
           <Coffees />
        </Route>
+
+
 
        {/* <Route path="/" />
          <Route path="/">

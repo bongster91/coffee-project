@@ -21,8 +21,11 @@ export default function CoffeesComponent() {
   }, []);
 
   return (
-    <div >
-      <ol className='coffee-collection'>
+    <div>
+      <br />
+      <br />
+      <br />
+      <ol className="coffee-collection">
         {coffees.map((coffee) => {
           return (
             <li key={coffee.id}>
