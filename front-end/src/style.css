@@ -103,3 +103,33 @@
     font-size: 20px;
 
 }
+
+.singular-index {
+    text-align: center;
+}
+
+.singular-index h5 {
+    font-size: 15px;
+}
+
+.singular-index button {
+    background: rgba(255, 255, 255, 0.39);
+    border: 1px solid rgb(250, 197, 98);
+    text-align: center;
+    border-radius: 15px;
+    font-family: "Decomart FF 4F";
+    font-size: 15px;
+    padding: 5px;
+    color: rgb(101,86,66);
+    width: 90px;
+    height: 60px;
+    margin: 10px;
+}
+
+.singular-index button:hover {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    width: 110px;
+    height: 80px;
+}
