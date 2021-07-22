@@ -33,7 +33,7 @@ const CoffeeDetails = ({ history, match }) => {
             <br />
             <br />
             <br />
-            <h5>{details.name}</h5>
+            <h5 style={{color: "gold"}}>{details.name}</h5>
             <h5></h5>
         </div>
     )
