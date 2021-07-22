@@ -71,19 +71,19 @@ VALUES (
         'Cold Brew',
         'https://i.ibb.co/dKkS6Cz/Java-Script-Capsules-Medium-Roast.png',
         'medium-roast-cup'
-    )
+    );
 
-INSERT INTO reviews (coffees_id, reviewer, content, rating) VALUES
+INSERT INTO reviews (coffee_id, reviewer, content, rating) VALUES
 ('1', 'Sara', 'Delicious!', 5),
 ('2', 'Brandon', 'I hate this coffee!', 0),
 ('2', 'Karen', 'Disgusting!', 5),
-('3', 'Brenda', "I couldn't sleep. It does it's job!", 5),
-('4', 'John', "I love the packaging! It's lux", 4),
-('5', 'Nick', "Better than K-Cups!", 4),
+('3', 'Brenda', 'I couldn''t sleep. It does it''s job!', 5),
+('4', 'John', 'I love the packaging! It''s lux', 4),
+('5', 'Nick', 'Better than K-Cups!', 4),
 ('4', 'Mike', 'Meh, I prefer Starbucks', 2),
 ('6', 'Elsa', 'Let it go', 1),
 ('6', 'Moana', 'Yum!', 4),
 ('7', 'Lilo', 'Keeps me energized.', 5),
 ('8', 'Anon', 'this.state = "awake"', 4),
-('9', 'Ash Ketchum', "After all these years, I'm still 10 years old", 0),
+('9', 'Ash Ketchum', 'After all these years, I''m still 10 years old', 0),
 ('9', 'Marissa', 'Omg! GOAT', 5);
