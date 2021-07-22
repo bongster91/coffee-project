@@ -50,19 +50,19 @@ VALUES (
     ),
     (
         'Coffee.filter()',
-        2.00,
-        'America',
-        'Filter',
-        '',
-        'filter'
+        22.00,
+        'Colombia',
+        'Drip',
+        'https://i.ibb.co/3mxCPdB/Bag-Packaging-12.png',
+        'drip coffee'
     ),
     (
         'setBeans({})',
-        100.00,
-        'Japan',
-        'Grinder',
-        '',
-        'grinder'
+        12.00,
+        'Honduras',
+        'Instant',
+        'https://i.ibb.co/3WfjrXV/SetBeans.png',
+        'setBeans instant'
     ),
     (
         '<input le coffee/>',
