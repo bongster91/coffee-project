@@ -47,7 +47,7 @@ const CoffeeDetails = ({ history, match }) => {
            <img src={coffee.url} alt={coffee.alt}/>
 
 
-            <h1 style={{color: "gold"}}>
+            <h1>
                 {coffee.name}
             </h1>
             <h3>{coffee.price}</h3>

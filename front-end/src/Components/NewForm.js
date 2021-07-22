@@ -37,10 +37,10 @@ function NewForm({ history }) {
     };
 
     return (
-        <div>
+        <div className="new-form">
             <form onSubmit={handleSubmit}>
                 <label htmlFor='name'>Name</label>
-                <input 
+                <input
                     id='name'
                     value={coffee.name}
                     type='text'
@@ -50,7 +50,7 @@ function NewForm({ history }) {
                 />
 
                 <label htmlFor='price'>Price</label>
-                <input 
+                <input
                     id='price'
                     value={coffee.price}
                     type='number'
@@ -62,7 +62,7 @@ function NewForm({ history }) {
                 />
 
                 <label htmlFor='origin'>Origin</label>
-                <input 
+                <input
                     id='origin'
                     value={coffee.origin}
                     type='text'
@@ -72,7 +72,7 @@ function NewForm({ history }) {
                 />
 
                 <label htmlFor='method'>Method</label>
-                <input 
+                <input
                     id='method'
                     value={coffee.method}
                     type='text'
@@ -82,7 +82,7 @@ function NewForm({ history }) {
                 />
 
                 <label htmlFor='url'>Image URL of Product</label>
-                <input 
+                <input
                     id='url'
                     value={coffee.url}
                     type='text'
@@ -91,7 +91,7 @@ function NewForm({ history }) {
                 />
 
                 <label htmlFor='alt'>Caption for Picture</label>
-                <input 
+                <input
                     id='alt'
                     value={coffee.alt}
                     type='text'
