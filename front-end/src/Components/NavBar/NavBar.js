@@ -37,10 +37,6 @@ export default function NavBar() {
             marginRight: "70px"
         }
 
-
-
-
-
     return (
         <nav>
             {(toggleMenu || screenWidth > 500) && (
