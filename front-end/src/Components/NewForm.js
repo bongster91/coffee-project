@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { apiURL } from '../util/apiURL';
 import axios from 'axios';
 
+
 const API = apiURL();
 
 function NewForm({ history }) {
@@ -38,6 +39,7 @@ function NewForm({ history }) {
 
     return (
         <div className="new-form">
+            <h1> Create Your Custom Coffee</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor='name'>Name</label>
                 <input
