@@ -23,7 +23,7 @@ function About() {
                     <br />
                   We were so commited and so passionate that we developed our own coffee line under the Pursuit Roasting Company.
                   <br />
-                  Our coffee is organic, and environmentally friendly so that you can stay caffeinated with a guilt free conscious.
+                  Our coffee is organic, and environmentally friendly so that you can stay caffeinated with a guilt free conscience.
                 </p>
             </section>
 
