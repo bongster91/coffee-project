@@ -9,3 +9,15 @@ CREATE TABLE coffees (
     url TEXT,
     alt TEXT
 );
+
+DROP TABLE IF EXISTS reviews;
+
+CREATE TABLE reviews (
+    id SERIAL PRIMARY KEY,
+    reviewer TEXT,
+    content TEXT,
+    rating NUMERIC,
+    CHECK (rating >= 0 AND rating <= 5),
+    coffee_id INTEGER REFERENCES coffees (id)
+    ON DELETE CASCADE
+);
