@@ -1,13 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SingularCoffee = ({coffee}) => {
     return (
         <div>
-            <h4>{coffee.name}</h4>
-            <h5>{coffee.price}</h5>
-            <h5>{coffee.origin}</h5>
-            <h5>{coffee.method}</h5>
-            console.log("coffee")
+            <div className="coffeeStyles">
+                <h4>{coffee.name}</h4>
+
+                <br />
+                
+                <p>{coffee.price}</p>
+
+                <Link to="/coffee/${coffee.id}">
+                    <button>Details</button>
+                </Link>
+            </div>
         </div>
     )
 }

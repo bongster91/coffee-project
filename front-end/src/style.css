@@ -3,7 +3,25 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover, contain;
-    height: 1100px;
+    width: 100%;
 }
 
+.coffee-collection {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.coffeeStyles {
+    color: Whitesmoke;
+    background-color: #874b16b2;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    width: 200px;
+    margin: 3em;
+    margin-top: 6em;
+    padding: 15px;
+}
+
+.coffeeStyles p {
+    padding: 10px;
+}

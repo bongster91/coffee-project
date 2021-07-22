@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import cup from "../../images/Cup (1).png";
 import JavaScriptLogo from "../../images/JavaScriptCoffeeTextLogo.png";
 import "./NavBar.css";
@@ -38,13 +39,23 @@ export default function NavBar() {
 
 
 
+
+
     return (
         <nav>
             {(toggleMenu || screenWidth > 500) && (
                 <ul className="navList">
-                    <img style={imgStyle} src={JavaScriptLogo} />
+
+                    <Link to="/"><img style={imgStyle} src={JavaScriptLogo} /></Link>
+
                     <li className="items">JavaScript</li>
-                    <li className="items">Collection</li>
+
+                    <li className="items">
+                        <Link to="/coffees">
+                            Collection
+                        </Link>
+                    </li>
+
                     <li className="items">About</li>
             </ul>
             )}
