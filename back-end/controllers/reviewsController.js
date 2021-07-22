@@ -17,11 +17,10 @@ reviews.get("/", async (req, res) => {
 
 //SHOW SPECIFIC REVIEW
 reviews.get("/:id", async (req, res) => {
-  const { coffee_id } = req.params;
-  const { review_id } = req.params;
+  const { id } = req.params;
 
   try {
-    const oneReview = await getOneReview(coffee_id, review_id);
+    const oneReview = await getOneReview(id);
     res.status(200).json(oneReview);
   } catch (error) {
     res.status(404).json({
