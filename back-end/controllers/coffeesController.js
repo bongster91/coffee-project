@@ -10,7 +10,6 @@ const {
   deleteCoffee
 } = require("../queries/coffees");
 
-coffees.use("/:coffee_id/reviews", reviewsController)
 
 coffees.get("/", async (req, res) => {
   const allCoffees = await getAllCoffees();
@@ -44,7 +43,7 @@ coffees.post("/", async (req, res) => {
 
 coffees.put("/:id", async (req, res) => {
   const { id } = req.params;
-
+  
   try {
     const updatedCoffee = await updateCoffee(id, req.body);
     res.status(200).json(updatedCoffee);
@@ -58,7 +57,7 @@ coffees.put("/:id", async (req, res) => {
 
 coffees.delete("/:id", async (req, res) => {
   const { id } = req.params;
-
+  
   try {
     const deletedCoffee = await deleteCoffee(id);
     res.status(200).json(deletedCoffee);
@@ -69,5 +68,7 @@ coffees.delete("/:id", async (req, res) => {
     });
   };
 });
+
+coffees.use("/:coffee_id/reviews", reviewsController)
 
 module.exports = coffees;
