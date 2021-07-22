@@ -1,13 +1,33 @@
+import AboutLabel from "../images/Pursuit Roasting Company.png"
+
 function About() {
+
+    const imgStyle = {
+        width: "100%",
+        marginTop: "30px",
+        backgroundSize: "contain"
+    }
 
     return (
         <div className="about-container">
 
             <div className="about-introBanner">
-                
+                <img style={imgStyle} src={AboutLabel} alt='About-label' />
             </div>
 
-            <h1>this is the about page.</h1>
+            <section className="about-blurb">
+                <h5>About Us</h5>
+                <p>JavaScript Coffee is a company founded on sleepless nights and caffeine breaks
+                    <br />
+                   by four software engineers. Our Mission is to sustain our all code no sleep lifestyle.
+                    <br />
+                  We were so commited and so passionate that we developed our own coffee line under the Pursuit Roasting Company.
+                  <br />
+                  Our coffee is organic, and environmentally friendly so that you can stay caffeinated with a guilt free conscious.
+                </p>
+            </section>
+
+
         </div>
     );
 };

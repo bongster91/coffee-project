@@ -49,3 +49,13 @@
     color: whitesmoke;
     margin: 5em;
 }
+
+.about-blurb h5 {
+    text-align: center;
+}
+
+.about-blurb p {
+    font-family: "Offerings";
+    text-align: center;
+    font-weight: bold;
+}
