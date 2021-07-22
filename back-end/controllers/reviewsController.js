@@ -1,7 +1,11 @@
 const express = require("express");
 const reviews = express.Router({ mergeParams: true });
 
-const { getAllReviewsForCoffee, getOneReview } = require("../queries/reviews");
+const {
+  getAllReviewsForCoffee,
+  getOneReview,
+  createReview,
+} = require("../queries/reviews");
 
 //INDEX
 reviews.get("/", async (req, res) => {
@@ -13,7 +17,7 @@ reviews.get("/", async (req, res) => {
 
 //SHOW SPECIFIC REVIEW
 reviews.get("/:id", async (req, res) => {
-//   const { coffee_id } = req.params;
+  //   const { coffee_id } = req.params;
   const { id } = req.params;
 
   try {
@@ -27,6 +31,21 @@ reviews.get("/:id", async (req, res) => {
   }
 });
 
+//CREATE REVIEW
+reviews.post("/", async(review, coffee_id)=>{
+    const { coffee_id } = req.params;
 
+    try {
+        const review = createReview(req.body, coffee_id)
+        res.status(200).json(review);
+    
+    } catch (error) {
+        res.status(404).json({
+            error: "Not Found",
+            message: error,
+          });
+    }
+
+})
 
 module.exports = reviews;

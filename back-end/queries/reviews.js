@@ -24,11 +24,24 @@ const getOneReview = async (id) => {
   }
 };
 
-//QUERY TO CREATE A NEW REVIEW FOR A SPECIFC COFFEE PRODUCT 
-
+//QUERY TO CREATE A NEW REVIEW FOR A SPECIFC COFFEE PRODUCT
+const createReview = async (review, coffee_id) => {
+  try {
+    const newReview = await db.one(
+      `INSERT INTO reviews (coffee_id, reviewer, content, rating)
+        VALUES
+        ($1, $2, $3, $4)
+        RETURNING * `,
+      [review.reviewer, review.content, review.rating, coffee_id]
+    );
+    return newReview;
+  } catch (error) {
+    return error;
+  }
+};
 
 module.exports = {
   getAllReviewsForCoffee,
   getOneReview,
-
+  createReview,
 };
