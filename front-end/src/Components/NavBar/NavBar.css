@@ -3,12 +3,12 @@ nav {
     top: 0;
     width: 100%;
     height: 50px;
-    background: #e6c19b;
+    background: whitesmoke
 }
 
 .navList {
     list-style-type: none;
-    background: #e6c19b;
+    background: whitesmoke;
     height: 100%;
     display: flex;
     justify-content: center;

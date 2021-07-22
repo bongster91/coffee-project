@@ -4,10 +4,11 @@
 } */
 
 .home-container {
-    background-image: url("../src/images/coffee-and-coffee-beans-FCLYCC5.jpg");
+    background-color: whitesmoke;
+    /* background-image: url("../src/images/coffee-and-coffee-beans-FCLYCC5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 100%; */
 }
 
 
@@ -32,12 +33,12 @@
 }
 
 .navList a {
-    color: brown;
+    color: rgb(101,86,66);
     text-decoration: none;
 }
 
 .navList a:visited {
-    color: brown;
+    color: rgb(101,86,66);
 }
 
 .navList a:hover {

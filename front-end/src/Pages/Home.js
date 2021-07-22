@@ -1,5 +1,6 @@
 import React from 'react';
-import BrandLabel from "../images/BrandingLabel.png"
+import BrandLabel from "../images/BrandingLabel.png";
+import DevelopersCoffee from "../images/DevelopersCoffee.png";
 
 export default function Home() {
 
@@ -22,11 +23,13 @@ export default function Home() {
     }
     return (
             <div className="home-container">
+
+                <div className="coffee-spotlight">
+                    <img style={imgStyle} src={DevelopersCoffee} />
+                </div>
+
                 <div>
-                    <p>Start and end your day with JavaScript</p>
-                    <br />
-                    <h1 style={styles}>JavaScript</h1>
-                    <p style={pStyles}>Start and end your day with JavaScript</p>
+
 
                 </div>
 
