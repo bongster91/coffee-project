@@ -47,16 +47,13 @@ const CoffeeDetails = ({ history, match }) => {
            <img src={coffee.url} alt={coffee.alt}/>
 
 
-            <h5 style={{fontSize: "20px"}}>{details.name}</h5>
-            <h5>{details.price}</h5>
-
             <h1 style={{color: "gold"}}>
                 {coffee.name}
             </h1>
             <h3>{coffee.price}</h3>
             <h3>{coffee.method}</h3>
             <h3>{coffee.origin}</h3>
-            
+
 
 
             <Link to='/coffees'>
