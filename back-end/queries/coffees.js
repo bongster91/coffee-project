@@ -22,16 +22,18 @@ const createCoffee = async (coffee) => {
   try {
     const newCoffee = await db.one(
       `INSERT INTO coffees 
-      (name, price, origin, method)
+      (name, price, origin, method, url, alt)
       VALUES
-      ($1, $2, $3, $4)
+      ($1, $2, $3, $4, $5, $6)
       RETURNING *
       `, 
       [
         coffee.name,
         coffee.price,
         coffee.origin,
-        coffee.method
+        coffee.method,
+        coffee.url,
+        coffee.alt
       ]
     );
     return newCoffee;
@@ -45,9 +47,9 @@ const updateCoffee = async (id, coffee) => {
     const updatedCoffee = await db.one(
       `UPDATE coffees
       SET
-      name=$1, price=$2, origin=$3, method=$4
+      name=$1, price=$2, origin=$3, method=$4, url=$5, alt=$6
       WHERE
-      id=$5
+      id=$7
       RETURNING *
       `, 
       [
@@ -55,6 +57,8 @@ const updateCoffee = async (id, coffee) => {
         coffee.price,
         coffee.origin,
         coffee.method,
+        coffee.url,
+        coffee.alt,
         id
       ]
     );
