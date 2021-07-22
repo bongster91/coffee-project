@@ -44,7 +44,7 @@ const CoffeeDetails = ({ history, match }) => {
             <br />
             <br />
             <br />
-           <img src={coffee.url} alt={coffee.alt}/>
+           <img src={coffee.url} alt={coffee.alt} />
 
 
             <h1>
