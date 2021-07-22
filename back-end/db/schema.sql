@@ -8,7 +8,7 @@ CREATE TABLE coffees (
     name TEXT,
     price NUMERIC,
     origin TEXT,
-    method TEXT
+    method TEXT,
+    url TEXT,
+    alt TEXT
 );
-
-    -- image VARBINARY (max),
