@@ -5,7 +5,7 @@ const getAllReviewsForCoffee = async (coffee_id) => {
   try {
     const allReviews = await db.any(
       `SELECT * FROM reviews
-        WHERE coffee_id = $1`,
+        WHERE coffee_id = $1;`,
       coffee_id
     );
     return allReviews;
@@ -15,11 +15,12 @@ const getAllReviewsForCoffee = async (coffee_id) => {
 };
 
 //QUERY TO GET A SPECIFIC REVIEW
-const getOneReview = async (id, coffee_id) => {
+const getOneReview = async (review_id, coffee_id) => {
   try {
     const oneReview = await db.one(
-      `SELECT * FROM reviews WHERE id = $1 AND coffee_id = $2)`,
-      [id, coffee_id]
+        `SELECT * FROM reviews 
+        WHERE coffee_id = $1 AND review_id = $2;`, 
+        [coffee_id, review_id]
     );
     return oneReview;
   } catch (error) {
@@ -29,6 +30,7 @@ const getOneReview = async (id, coffee_id) => {
 
 //QUERY TO CREATE A NEW REVIEW FOR A SPECIFC COFFEE PRODUCT
 const createReview = async (review, coffee_id) => {
+
   try {
     const newReview = await db.one(
       `INSERT INTO reviews 

@@ -18,10 +18,10 @@ reviews.get("/", async (req, res) => {
 //SHOW SPECIFIC REVIEW
 reviews.get("/:id", async (req, res) => {
   const { coffee_id } = req.params;
-  const { id } = req.params;
+  const { review_id } = req.params;
 
   try {
-    const oneReview = await getOneReview(id, coffee_id);
+    const oneReview = await getOneReview(coffee_id, review_id);
     res.status(200).json(oneReview);
   } catch (error) {
     res.status(404).json({
@@ -32,21 +32,19 @@ reviews.get("/:id", async (req, res) => {
 });
 
 //CREATE REVIEW
-reviews.post("/", async(req,res)=>{
-    const { coffee_id } = req.params;
-    const {review} = req.body
+reviews.post("/", async (req, res) => {
+  const { coffee_id } = req.params;
+  const { review } = req.body;
 
-    try {
-        const review = createReview(review, coffee_id)
-        res.status(200).json(review);
-    
-    } catch (error) {
-        res.status(404).json({
-            error: "Not Found",
-            message: error,
-          });
-    }
-
-})
+  try {
+    const review = createReview(review, coffee_id);
+    res.status(200).json(review);
+  } catch (error) {
+    res.status(404).json({
+      error: "Not Found",
+      message: error,
+    });
+  }
+});
 
 module.exports = reviews;
