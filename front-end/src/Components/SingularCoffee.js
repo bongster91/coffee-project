@@ -13,7 +13,7 @@ const SingularCoffee = ({coffee}) => {
                 <p>{coffee.origin}</p>
 
                 <Link className="nav-link" to={`/coffees/${coffee.id}`}>
-                    <button>Details</button>
+                    <button className="btn-deets">Details</button>
                 </Link>
             </div>
         </div>

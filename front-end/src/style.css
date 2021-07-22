@@ -1,13 +1,12 @@
-/* body {
 
 
-} */
 
 .home-container {
-    background-image: url("../src/images/coffee-and-coffee-beans-FCLYCC5.jpg");
+    background-color: whitesmoke;
+    /* background-image: url("../src/images/coffee-and-coffee-beans-FCLYCC5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 100%; */
 }
 
 
@@ -19,9 +18,10 @@
 
 .coffeeStyles {
     color: Whitesmoke;
-    background-color: #874b16b2;
-    text-align: center;
+    background-color: #874b1685;
     border: 1px solid whitesmoke;
+    border-radius: 5px;
+    text-align: center;
     width: 200px;
     margin: 3em;
     margin-top: 6em;
@@ -33,18 +33,39 @@
 }
 
 .navList a {
-    color: brown;
+    color: rgb(101,86,66);
     text-decoration: none;
 }
 
 .navList a:visited {
-    color: brown;
+    color: rgb(101,86,66);
 }
 
 .navList a:hover {
     font-family: "Decomart FF 4F";
     color: rgb(2, 2, 2);
 }
+
+.nav-logo:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
 
 .about-container h1 {
     color: whitesmoke;
@@ -61,4 +82,55 @@
     text-align: center;
     font-size: 18px;
     font-weight: bold;
+}
+
+.btn-deets {
+    background: rgba(255, 217, 0, 0.39);
+    border: 1px solid rgb(250, 197, 98);
+    border-radius: 15px;
+    font-family: "Decomart FF 4F";
+    font-size: 15px;
+    padding: 5px;
+    color: rgb(101,86,66);
+    width: 60px;
+    height: 40px;
+}
+
+.btn-deets:hover {
+    border: 1px solid rgb(250, 197, 98);
+    border-radius: 15px;
+    width: 80px;
+    color: black;
+    font-size: 20px;
+
+}
+
+.singular-index {
+    text-align: center;
+}
+
+.singular-index h5 {
+    font-size: 15px;
+}
+
+.singular-index button {
+    background: rgba(255, 255, 255, 0.39);
+    border: 1px solid rgb(250, 197, 98);
+    text-align: center;
+    border-radius: 15px;
+    font-family: "Decomart FF 4F";
+    font-size: 15px;
+    padding: 5px;
+    color: rgb(101,86,66);
+    width: 90px;
+    height: 60px;
+    margin: 10px;
+}
+
+.singular-index button:hover {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    width: 110px;
+    height: 80px;
 }

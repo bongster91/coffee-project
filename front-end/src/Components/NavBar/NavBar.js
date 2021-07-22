@@ -43,7 +43,7 @@ export default function NavBar() {
                 <ul className="navList">
 
                     <Link to="/">
-                        <img style={imgStyle} src={JavaScriptLogo} alt='logo' />
+                        <img className="nav-logo" style={imgStyle} src={JavaScriptLogo} alt='logo' />
                     </Link>
 
                     <li className="items">

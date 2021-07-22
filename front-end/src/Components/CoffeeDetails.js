@@ -35,8 +35,9 @@ const CoffeeDetails = ({ history, match }) => {
             );
     };
 
+
     return (
-        <div>
+        <div className="singular-index">
             <br />
             <br />
             <br />
@@ -45,6 +46,10 @@ const CoffeeDetails = ({ history, match }) => {
             <br />
            <img src={coffee.url} alt={coffee.alt}/>
 
+
+            <h5 style={{fontSize: "20px"}}>{details.name}</h5>
+            <h5>{details.price}</h5>
+
             <h1 style={{color: "gold"}}>
                 {coffee.name}
             </h1>
@@ -52,6 +57,7 @@ const CoffeeDetails = ({ history, match }) => {
             <h3>{coffee.method}</h3>
             <h3>{coffee.origin}</h3>
             
+
 
             <Link to='/coffees'>
                 <button>Back</button>
