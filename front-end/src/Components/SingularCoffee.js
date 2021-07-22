@@ -3,8 +3,26 @@ import { Link } from "react-router-dom";
 
 const SingularCoffee = ({coffee}) => {
     return (
-        <div>
-            <div className="coffeeStyles">
+        <div className="container">
+            <div className="card">
+                <div className="face face1">
+                    <div className="content">
+                    <h4>{coffee.name}</h4>
+                    </div>
+                </div>
+
+                <div className="face face2">
+                    <div className="content">
+                        <p>{coffee.method}</p>
+
+                <Link className="nav-link" to={`/coffees/${coffee.id}`}>
+                    <p>Details</p>
+                    {/* <button className="btn-deets">Details</button> */}
+                </Link>
+                    </div>
+                </div>
+            </div>
+            {/* <div className="coffeeStyles">
                 <h4>{coffee.name}</h4>
 
                 <br />
@@ -15,7 +33,7 @@ const SingularCoffee = ({coffee}) => {
                 <Link className="nav-link" to={`/coffees/${coffee.id}`}>
                     <button className="btn-deets">Details</button>
                 </Link>
-            </div>
+            </div> */}
         </div>
     )
 }
