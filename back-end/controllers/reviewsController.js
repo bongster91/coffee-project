@@ -17,11 +17,11 @@ reviews.get("/", async (req, res) => {
 
 //SHOW SPECIFIC REVIEW
 reviews.get("/:id", async (req, res) => {
-  //   const { coffee_id } = req.params;
+  const { coffee_id } = req.params;
   const { id } = req.params;
 
   try {
-    const oneReview = await getOneReview(id);
+    const oneReview = await getOneReview(id, coffee_id);
     res.status(200).json(oneReview);
   } catch (error) {
     res.status(404).json({
@@ -32,7 +32,7 @@ reviews.get("/:id", async (req, res) => {
 });
 
 //CREATE REVIEW
-reviews.post("/", async(review, coffee_id)=>{
+reviews.post("/", async(req, res)=>{
     const { coffee_id } = req.params;
 
     try {
