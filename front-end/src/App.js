@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Home from "./Pages/Home";
+import Home from './Pages/Home';
 import Edit from './Pages/Edit';
 import Coffees from './Pages/Coffees';
 import New from './Pages/New';
-import ShowSingle from "./Pages/ShowSingle";
+import ShowSingle from './Pages/ShowSingle';
 import FourOFour from './Pages/FourOFour';
 import About from './Pages/About';
 
