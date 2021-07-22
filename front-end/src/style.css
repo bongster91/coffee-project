@@ -1,8 +1,12 @@
-body {
+/* body {
+
+
+} */
+
+.home-container {
     background-image: url("../src/images/coffee-and-coffee-beans-FCLYCC5.jpg");
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover, contain;
+    background-size: cover;
     width: 100%;
 }
 
@@ -29,10 +33,20 @@ body {
 }
 
 .navList a {
+    color: brown;
     text-decoration: none;
+}
+
+.navList a:visited {
+    color: brown;
 }
 
 .navList a:hover {
     font-family: "Decomart FF 4F";
     color: rgb(2, 2, 2);
+}
+
+.about-container h1 {
+    color: whitesmoke;
+    margin: 5em;
 }

@@ -23,9 +23,6 @@ nav {
     color: #633818;
     cursor: pointer;
 }
-.items:hover {
-    color: #ff874fe0;
-}
 
 .btn {
     display: none;

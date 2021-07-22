@@ -11,6 +11,7 @@ export default function Home() {
     }
 
     const pStyles = {
+        margin: "5em",
         textAlign: "center",
         color: "whitesmoke"
     }
@@ -20,7 +21,7 @@ export default function Home() {
         marginTop: "60px"
     }
     return (
-            <div>
+            <div className="home-container">
                 <div>
                     <p>Start and end your day with JavaScript</p>
                     <br />
