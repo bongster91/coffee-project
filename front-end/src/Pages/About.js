@@ -17,9 +17,9 @@ function About() {
 
             <section className="about-blurb">
                 <h5>About Us</h5>
-                <p>JavaScript Coffee is a company founded on sleepless nights and caffeine breaks
+                <p>JavaScript Coffee is a company founded on sleepless nights and caffeine breaks by four software engineers.
                     <br />
-                   by four software engineers. Our Mission is to sustain our all code no sleep lifestyle.
+                    Our Mission is to sustain our " All code no sleep " lifestyle.
                     <br />
                   We were so commited and so passionate that we developed our own coffee line under the Pursuit Roasting Company.
                   <br />
