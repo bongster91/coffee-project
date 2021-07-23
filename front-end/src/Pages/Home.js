@@ -12,12 +12,10 @@ export default function Home() {
             <div className="home-container">
 
                 <div className="coffee-spotlight">
-                    <img style={imgStyle} src={DevelopersCoffee} alt="coffee-banner-ad" />
+                     <img style={imgStyle} src={DevelopersCoffee} alt="coffee-banner-ad" />
                 </div>
 
                 <div>
-
-
                 </div>
 
 
