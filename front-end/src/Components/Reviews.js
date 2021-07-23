@@ -13,18 +13,17 @@ function Reviews({ history, match }) {
   useEffect(() => {
     axios.get(`${apiURL}/coffees/${coffees_id}/reviews`).then((res) => {
       setReviews(res.data);
-      console.log(res.data)
     });
   }, [id, history]);
-  
+
   const handleDelete = async () => {
-      await axios.delete(`${apiURL}/coffees/${id}/reviews`).then(() => {
-          history.push(`${apiURL}/coffees/reviews`);
-        });
-    };
-    
-    
+    await axios.delete(`${apiURL}/coffees/${id}/reviews`).then(() => {
+      history.push(`${apiURL}/coffees/reviews`);
+    });
+  };
+
   return <div></div>;
 }
+
 
 export default Reviews;
