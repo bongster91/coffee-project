@@ -38,14 +38,30 @@ function Reviews() {
           (c) => console.warn('catch', c)
         );
   };
+
+  const handleAddReview = async (newReview) => {
+    await axios
+      .post(`${API}/coffees/${id}/reviews`, newReview)
+      .then(
+        (res) => {
+          setReviews([...reviews, res.data]);
+        },
+        (e) => console.error(e)
+      )
+      .catch(
+        (c) => console.warn('catch', c)
+      );
+  };
     
     
   return (
     <section>
       <h1>Reviews</h1>
 
-      <ReviewForm />
-      <h2>Add a new review</h2>
+      <h3>Add a new review</h3>
+      <ReviewForm 
+        handleAddReview={handleAddReview}
+      />
 
       <ol>
         {reviews.map((review) => {
