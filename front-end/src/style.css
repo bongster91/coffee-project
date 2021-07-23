@@ -14,14 +14,16 @@ body {
 }
 
 .container {
-    display: flex;
     width: 1000px;
-    position: relative;
+    /* position: relative; */
     justify-content: space-between;
 }
 
 .container .card {
-    position: relative;
+    float: left;
+    margin: 10px;
+    flex-wrap: wrap;
+    /* position: absolute; */
     cursor: pointer;
 }
 
