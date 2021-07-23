@@ -12,9 +12,6 @@ function Reviews() {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    
-  return <div></div>;
-
     axios
       .get(`${API}/coffees/${id}/reviews`)
       .then((res) => {
