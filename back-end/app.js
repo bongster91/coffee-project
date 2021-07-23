@@ -2,6 +2,7 @@
 const cors = require("cors");
 const express = require("express");
 const coffeesController = require("./controllers/coffeesController")
+const morgan = require('morgan');
 
 // CONFIGURATION
 const app = express();
@@ -9,6 +10,7 @@ const app = express();
 // MIDDLEWARE
 app.use(cors());
 app.use(express.json()); // Parse incoming JSON
+app.use(morgan('common'));
 
 app.use("/coffees", coffeesController)
 

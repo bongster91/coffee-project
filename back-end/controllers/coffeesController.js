@@ -1,5 +1,5 @@
 const express = require("express");
-const coffees = express.Router();
+const coffees = express.Router({ mergeParams: true });
 const reviewsController = require("./reviewsController")
 
 const { 
