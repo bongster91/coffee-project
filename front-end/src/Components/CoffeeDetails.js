@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { apiURL } from "../util/apiURL";
 import axios from "axios";
+import Reviews from './Reviews';
 
 const API = apiURL();
 
@@ -65,6 +66,7 @@ const CoffeeDetails = ({ history, match }) => {
             </Link>
 
             <button onClick={handleDelete}>Delete {coffee.name}</button>
+            <Reviews />
         </div>
     )
 }
