@@ -53,14 +53,35 @@ function Reviews() {
       );
   };
     
-    
+  const handleEditReview = async (updatedReview) => {
+    await axios
+      .put(`${API}/coffees/${id}/reviews/${updatedReview.id}`, updatedReview)
+      .then(
+        (res) => {
+          const copyReviewArray = [...reviews];
+
+          const indexUpdatedReview = copyReviewArray.findIndex(
+            (review) => {
+              return review.id === updatedReview.id;
+            });
+
+          copyReviewArray[indexUpdatedReview] = res.data;
+          setReviews(copyReviewArray);
+        },
+        (e) => console.error(e)
+      )
+      .catch(
+        (c) => console.warn('catch', c)
+      );
+  };
+
   return (
     <section>
       <h1>Reviews</h1>
 
       <h3>Add a new review</h3>
       <ReviewForm 
-        handleAddReview={handleAddReview}
+        handleSubmit={handleAddReview}
       />
 
       <ol>
@@ -70,6 +91,7 @@ function Reviews() {
               <Review 
                 review={review}
                 handleDelete={handleDelete}
+                handleSubmit={handleEditReview}
               />
             </li>
           )

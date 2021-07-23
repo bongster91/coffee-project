@@ -1,10 +1,19 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
-function ReviewForm({ handleAddReview }) {
+function ReviewForm(props) {
+    let { id } = useParams();
+
+    const { 
+        reviewDetails,
+        toggleView
+    } = props;
+
     const [ review, setReview ] = useState({
         reviewer: '',
         content: '',
-        rating: ''
+        rating: '',
+        coffee_id: id
     });
 
     const handleTextChange = (e) => {
@@ -13,11 +22,29 @@ function ReviewForm({ handleAddReview }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        handleAddReview(review);
+        props.handleSubmit(review, id);
+
+        if(reviewDetails) {
+            toggleView();
+        };
+
+        setReview({
+            reviewer: '',
+            content: '',
+            rating: '',
+            coffee_id: id
+        });
     };
+
+    useEffect(() => {
+        if (reviewDetails) {
+            setReview(reviewDetails);
+        }
+    }, [id, reviewDetails, props]);
 
     return (
         <div>
+            {props.children}
             <form onSubmit={handleSubmit}>
                 <label htmlFor='reviewer'>Name</label>
                 <input
