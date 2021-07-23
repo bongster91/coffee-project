@@ -4,19 +4,6 @@ import DevelopersCoffee from "../images/DevelopersCoffee.png";
 
 export default function Home() {
 
-    const styles = {
-        textAlign: "center",
-        // MarginTop: "20px",
-        fontFamily: "Braton Composer",
-        color: "#ffd700"
-    }
-
-    const pStyles = {
-        margin: "5em",
-        textAlign: "center",
-        color: "whitesmoke"
-    }
-
     const imgStyle = {
         width: "100%",
         marginTop: "60px"
