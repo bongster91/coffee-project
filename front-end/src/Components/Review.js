@@ -20,9 +20,7 @@ function Review(props) {
 
     return (
         <div>
-            <button onClick={toggleView}>
-                Edit {review.reviewer}
-            </button>
+
 
             {viewEditForm ? (
                 <ReviewForm
@@ -39,7 +37,7 @@ function Review(props) {
                         </div>
 
                         <div className="review-box-top">
-                            <h5><span>{review.reviewer} says: </span> <h4>{review.content}</h4></h5>
+                            <h4><span>{review.reviewer} says: </span> <p>{review.content}</p></h4>
 
                         </div>
 
@@ -51,6 +49,10 @@ function Review(props) {
                             <p>{review.rating}</p>
                             <img className="cuppa" src={cuppa} />
                         </div>
+
+                        <button style={buttonStyle} onClick={toggleView}>
+                            Edit
+                        </button>
 
                         <button style={buttonStyle} onClick={() => handleDelete(review.id)}>
                             Delete

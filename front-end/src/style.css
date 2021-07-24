@@ -225,17 +225,24 @@ body {
     font-size: 20px;
     color: black;
     font-weight: bold;
-    width: 130px;
+    width: 150px;
     height: 80px;
 }
 
+
+.newform-container {
+    display: inline;
+}
+
 .new-form {
-    border: 1px solid gold;
-    margin: 50px;
-    height: 650px;
+    display: inline-block;
+    margin: 80px;
+    width: 100%;
+    height: 500px;
 }
 
 .new-form h1 {
+    display: inline;
     text-align: center;
     text-decoration: underline;
     padding: 10px;
@@ -251,7 +258,7 @@ body {
 }
 
 .new-form input {
-    display: inline-block;
+    display: inline;
     border: 1px solid rgb(250, 197, 98);
     float: left;
     margin: 1em;
@@ -279,6 +286,10 @@ body {
     height: 80px;
 }
 
+.add-review form {
+    margin-left: 15px;
+}
+
 .review-container {
     display: flex;
     justify-content: center;
@@ -290,7 +301,7 @@ body {
 .profile {
     display: flex;
     width: 500px;
-    height: 100px;
+    height: 200px;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     padding:20px;

@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 function ReviewForm(props) {
     let { id } = useParams();
 
-    const { 
+    const {
         reviewDetails,
         toggleView
     } = props;
@@ -43,7 +43,7 @@ function ReviewForm(props) {
     }, [id, reviewDetails, props]);
 
     return (
-        <div>
+        <div className="add-review">
             {props.children}
             <form onSubmit={handleSubmit}>
                 <label htmlFor='reviewer'>Name</label>
