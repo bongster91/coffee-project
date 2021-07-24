@@ -12,6 +12,12 @@ function Review(props) {
         toggleEditForm(!viewEditForm);
     };
 
+    const buttonStyle = {
+        width: "90px",
+        height: "30px",
+        marginTop: "70px",
+    }
+
     return (
         <div>
             <button onClick={toggleView}>
@@ -27,30 +33,31 @@ function Review(props) {
             ) : (
 
                 <div className="review-container">
-                    <div>
-                        <div className="profile">
-                            <img className="profile-img" src={smileycup} alt="profile-placeholder" />
+                    <div className="profile">
+                        <div className="profile-img">
+                            <img src={smileycup} alt="profile-placeholder" />
                         </div>
 
                         <div className="review-box-top">
-                            <h1>{review.reviewer}</h1>
+                            <h5><span>{review.reviewer} says: </span> <h4>{review.content}</h4></h5>
+
                         </div>
 
                         <div className="review-details">
-                            <h2>{review.content}</h2>
+
                         </div>
 
                         <div className="review-rating">
-                            <h2>{review.rating}</h2>
+                            <p>{review.rating}</p>
                             <img className="cuppa" src={cuppa} />
                         </div>
 
-                        <button onClick={() => handleDelete(review.id)}>
+                        <button style={buttonStyle} onClick={() => handleDelete(review.id)}>
                             Delete
                         </button>
 
                         </div>
-                </div>
+                    </div>
             )}
         </div>
     );
