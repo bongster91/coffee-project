@@ -18,7 +18,7 @@ function Reviews() {
         setReviews(res.data);
       });
   }, [id]);
-  
+
   const handleDelete = async (reviewID) => {
       await axios
         .delete(`${API}/coffees/${id}/reviews/${reviewID}`)
@@ -52,7 +52,7 @@ function Reviews() {
         (c) => console.warn('catch', c)
       );
   };
-    
+
   const handleEditReview = async (updatedReview) => {
     await axios
       .put(`${API}/coffees/${id}/reviews/${updatedReview.id}`, updatedReview)
@@ -75,28 +75,40 @@ function Reviews() {
       );
   };
 
+  const reviewHeader = {
+    fontFamily: "Brooke",
+  }
+
   return (
-    <section>
-      <h1>Reviews</h1>
+    <section className="reviews">
+      <div className="review-heading">
+        <h1 style={reviewHeader}><span>Have you tried our coffee ?</span></h1>
 
-      <h3>Add a new review</h3>
-      <ReviewForm 
-        handleSubmit={handleAddReview}
-      />
+        <h3>Leave us a review</h3>
+        <ReviewForm
+          handleSubmit={handleAddReview}
+        />
 
-      <ol>
-        {reviews.map((review) => {
-          return (
-            <li key={review.id}>
-              <Review 
-                review={review}
-                handleDelete={handleDelete}
-                handleSubmit={handleEditReview}
-              />
-            </li>
-          )
-        })}
-      </ol>
+        <h1 style={reviewHeader}><span>Customer Reviews</span></h1>
+
+        <div className="reviews-container">
+          <div className="review-box">
+            <ol>
+              {reviews.map((review) => {
+                return (
+                    <li key={review.id}>
+                      <Review
+                        review={review}
+                        handleDelete={handleDelete}
+                        handleSubmit={handleEditReview}
+                      />
+                    </li>
+                )
+              })}
+            </ol>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }

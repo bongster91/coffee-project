@@ -17,23 +17,10 @@ const SingularCoffee = ({coffee}) => {
 
                 <Link className="nav-link" to={`/coffees/${coffee.id}`}>
                     <p>Details</p>
-                    {/* <button className="btn-deets">Details</button> */}
                 </Link>
                     </div>
                 </div>
             </div>
-            {/* <div className="coffeeStyles">
-                <h4>{coffee.name}</h4>
-
-                <br />
-
-                <p>{coffee.method}</p>
-                <p>{coffee.origin}</p>
-
-                <Link className="nav-link" to={`/coffees/${coffee.id}`}>
-                    <button className="btn-deets">Details</button>
-                </Link>
-            </div> */}
         </div>
     )
 }
