@@ -1,152 +1,42 @@
-# PERN Final Project Template
+# JavaScript Coffee Brand
 
-- select `use this template`
-- clone this repo
+### Overview
+A PERN stack coffee website. Showcasing our knowledge in implementing Express, PostgreSQL, NodeJS and React.
+#### Table of Contents
+- 1. [ Development ](#development)
+  * Express
+  * PostreSQL
+  * ReactJS
+- 2. [ Design ](#design)
+    * Wireframe
+    * Branding
+    * Package Design
+    * Hifi Mockup
+ - - -
 
-## Getting Started
+### Development
+- - -
+#### Express - Server
+We created our server using [Express](https://expressjs.com/) for our client request to several endpoints.
 
+#### PostgreSQL
+Our database was designed using [PostgreSQL](https://www.postgresql.org/) to store the data associated with our coffee as well as the user reviews. Our website uses full CRUD for our custom coffee form/our edit form and allows the user to create, edit and delete their customizations and comments.
+![database-img](front-end/src/Database.png)
 
-### Project Structure
+#### ReactJS
+React is the vehicle transferring our contents to and from the back end. Allowing the user to access the info we have stored and through our front-end functionality allows our database to update based on what is entered by our forms and stored to our database.
 
-```
-├── README.md (what you are currently reading)
-├── back-end (a basic express app)
-├── front-end (a basic create-react-app)
-└── package.json (necessary boilerplate for heroku deployment )
-```
+- - -
+### Design
+#### Wireframe
+After we decided on what we wanted our store to be (coffee), it was time to figure out how we wanted to set up our web store. We knew we wanted something that would bold, but not loud. We came up with a wireframe that we were happy with using [Draw.io](https://app.diagrams.net/).
+![Wireframe](front-end/src/Lofi-JavaScript-Mockup.png)
+- - -
 
-**NOTE:** - You will have 3 `package.json` files in this project
-
-- **Top level** - necessary for heroku deployment: you don't need to do anything with this file, it is set up for you
-- **back-end** - everything to do with the express/postgres backend
-- **front-end** - everything to do with the create-react-app front-end
-
-### `back-end` Set Up and Deployment to Heroku
-
-#### Basic App
-
-**/back-end**
-
-- `cd back-end`
-- `npm install`
-- `touch .env`
-
-make sure you are on the same level as the `package.json` of the `back-end` directory
-
-- `touch .env`
-
-```
-PORT=3333
-PG_HOST=localhost
-PG_PORT=5432
-PG_DATABASE=postgres
-PG_USER=postgres
-PG_PASSWORD=""
-```
-
-- `npm run db_init`
-- `npm run db_seed`
-
-Test app locally. If it does not work locally, it will not work on Heroku.
-
-Fix bugs.
-
-When ready:
-
-- `heroku create`
-- `git add .`
-- `git commit -m 'heroku deployment`
-- `git push heroku main` - if this does not work, go to heroku dashboard => deployment and add the remote
-
-ie `heroku git:remote -a <your-heroku-app-name>`
-
-Open your heroku app. You should see the `Hello, world!` message.
-
-#### Adding the Database on Heroku
-
-In the heroku dashboard, go to `Overview` choose `configure add ons`
-
-In the search bar `Quickly add add-ons` - search for `postgres` - choose `heroku postgres`
-
-- Choose hobby dev
-- Note: even though hobby dev is free, you may be required to provide a credit card
-- In new view, click on `heroku Postgres / attached as DATABASE` => Settings
-
-![](./assets/heroku-database-dash.png)
-
-You will need to make these key value pairs in your heroku app
-
-**IMPORTANT**
-The `keys` must match perfectly with what is in your `db/dbConfig.js` file and your local `.env`
-
-- Open a new tab/window and go to the main page of your heroku app choose settings
-- Reveal Config Variables
-- Add the variables
-
-**Note:** these are false credentials and given for example only:
-
-```
-PG_HOST=ec2-55-227-246-76.compute-1.amazonaws.com
-PG_PORT=5432
-PG_DATABASE=d9bq2bk2s4ilde
-PG_USER=bcwmtakzkmkdxr
-PG_PASSWORD=afb0a7a9396af1bac763154f5649e049ce280658bef0ded7efde6
-```
-
-![](./assets/heroku-config-vars.png)
-
-- make sure you are on the same directory level as your `package.json` of your `back-end` directory
-
-Go back to the heroku database view => settings
-
-- copy `Heroku CLI` (something like `heroku pg:psql postgresql-shaped-11685 --app mysterious-spires-49488`)
-- paste into your terminal
-
-- it should open a `pg shell`
-
-Run the following:
-
-- `\i ./db/schema.sql`
-  - success should say `CREATE TABLE`
-- `\i ./db/seed.sql`
-  - success should say `INSERT 0 7`
-- `\q`
-
-This will insert the test table with the days of the week.
-
-Later, when you have build out your app to have your schema and seed data, you will:
-
-- edit the `db/schema.sql` file to be your own
-- edit th `db/seed.sql` file to be your own
-- reopen this shell and rerun these commands.
-
-Note you should set up the
-
-### `front-end` Set Up
-
-**/front-end**
-
-- `cd front-end`
-- `npm install`
-
-- `npm start`
-
-**src/util/apiURL.js**
-
-Replace the placeholder heroku app with your heroku app URL that you set up earlier
-
-Make sure your back-end is still running. You should see an unordered list of the days of the week, coming from your back-end. If it does not work locally, it will not work when it is deployed. Keep debugging until it works
-
-Go to netlify, choose `New site from Git`
-
-- choose continuos deployment, GitHub.
-- configure the netlify app on GitHub
-
-Follow the prompts to add this project repo to Netlify
-Once, authorized, configure to launch app from
-
-- Base directory: `front-end`
-- Build command: `npm run build`
-- Publish directory: `build` (may appear as `front-end/build`)
-
-![](./assets/netlify-deploy-settings.png)
+#### Logo, Design and Package Design
+Now if we were gonna design a coffee comapny we needed a logo, a product and packaging. Using [InDesign](https://www.adobe.com/products/indesign/free-trial-download.html) and [Photoshop](https://www.adobe.com/products/photoshop/landpa.html?sdid=KKQIN&mv=search&kw=photoshop&ef_id=Cj0KCQjwl_SHBhCQARIsAFIFRVWMDYmvecgHVCAZrwhp_GCtN4-AA-v2ZyI3N69YDzlihIZXv_UMJ8gaAm7dEALw_wcB:G:s&s_kwcid=AL!3085!3!522504775617!e!!g!!adobe%20photoshop!1712238394!67643541820&gclid=Cj0KCQjwl_SHBhCQARIsAFIFRVWMDYmvecgHVCAZrwhp_GCtN4-AA-v2ZyI3N69YDzlihIZXv_UMJ8gaAm7dEALw_wcB)
+![](front-end/src/logo-brand-Items-cretaed.png) we created the logo first and then using 3D modeling the pakages were designed. The label was then created and JavaScript Coffee was created.
+- - -
+#### Hifi-Mockup
+Once the wirerame and product creation was done, it was time to create a more realistic and detailed version of our website. Using [Adobe XD](https://www.adobe.com/creativecloud/business/enterprise/xd.html?sdid=3NQZBDR7&mv=Search&ef_id=Cj0KCQjwl_SHBhCQARIsAFIFRVV6lTGdp76AWs550HaWenWpQgQn4mfmEHXOyLSGMuBUYU4qQ1_dRTwaAmWAEALw_wcB:G:s&s_kwcid=AL!3085!3!341663403266!e!!g!!adobe%20xd!1756849678!69408408715) We replicated the format of the wireframe and imported fonts and the images designed.
+![Mockup](front-end/src/JSCoffee-Hifi-Mockup.png)

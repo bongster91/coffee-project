@@ -36,7 +36,6 @@ const CoffeeDetails = ({ history, match }) => {
             );
     };
 
-
     return (
         <div className="singular-index">
             <br />
