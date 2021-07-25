@@ -34,8 +34,8 @@ After we decided on what we wanted our store to be (coffee), it was time to figu
 - - -
 
 #### Logo, Design and Package Design
-Now if we were gonna design a coffee comapny we needed a logo, a product and packaging. Using [InDesign](https://www.adobe.com/products/indesign/free-trial-download.html) and [Photoshop](https://www.adobe.com/products/photoshop/landpa.html?sdid=KKQIN&mv=search&kw=photoshop&ef_id=Cj0KCQjwl_SHBhCQARIsAFIFRVWMDYmvecgHVCAZrwhp_GCtN4-AA-v2ZyI3N69YDzlihIZXv_UMJ8gaAm7dEALw_wcB:G:s&s_kwcid=AL!3085!3!522504775617!e!!g!!adobe%20photoshop!1712238394!67643541820&gclid=Cj0KCQjwl_SHBhCQARIsAFIFRVWMDYmvecgHVCAZrwhp_GCtN4-AA-v2ZyI3N69YDzlihIZXv_UMJ8gaAm7dEALw_wcB)
-![](front-end/src/logo-brand-Items-cretaed.png) we created the logo first and then using 3D modeling the pakages were designed. The label was then created and JavaScript Coffee was created.
+Now if we were gonna design a coffee comapny we needed a logo, a product and packaging. Using [InDesign](https://www.adobe.com/products/indesign/free-trial-download.html) and [Photoshop](https://www.adobe.com/products/photoshop/landpa.html?sdid=KKQIN&mv=search&kw=photoshop&ef_id=Cj0KCQjwl_SHBhCQARIsAFIFRVWMDYmvecgHVCAZrwhp_GCtN4-AA-v2ZyI3N69YDzlihIZXv_UMJ8gaAm7dEALw_wcB:G:s&s_kwcid=AL!3085!3!522504775617!e!!g!!adobe%20photoshop!1712238394!67643541820&gclid=Cj0KCQjwl_SHBhCQARIsAFIFRVWMDYmvecgHVCAZrwhp_GCtN4-AA-v2ZyI3N69YDzlihIZXv_UMJ8gaAm7dEALw_wcB)we created the logo first and then using 3D modeling the pakages were designed. The label was then created and JavaScript Coffee was created.
+![](front-end/src/logo-brand-Items-cretaed.png)
 - - -
 #### Hifi-Mockup
 Once the wirerame and product creation was done, it was time to create a more realistic and detailed version of our website. Using [Adobe XD](https://www.adobe.com/creativecloud/business/enterprise/xd.html?sdid=3NQZBDR7&mv=Search&ef_id=Cj0KCQjwl_SHBhCQARIsAFIFRVV6lTGdp76AWs550HaWenWpQgQn4mfmEHXOyLSGMuBUYU4qQ1_dRTwaAmWAEALw_wcB:G:s&s_kwcid=AL!3085!3!341663403266!e!!g!!adobe%20xd!1756849678!69408408715) We replicated the format of the wireframe and imported fonts and the images designed.
