@@ -46,7 +46,7 @@ function Review(props) {
                         </div>
 
                         <div className="review-rating">
-                            <p>{review.rating}</p>
+                            <p><strong>{review.rating}</strong> out of 5</p>
                             <img className="cuppa" src={cuppa} />
                         </div>
 

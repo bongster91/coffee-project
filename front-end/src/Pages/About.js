@@ -15,7 +15,7 @@ function About() {
                 <img style={imgStyle} src={AboutLabel} alt='About-label' />
             </div>
 
-            <section className="about-blurb">
+            <main className="about-blurb">
                 <h5>About Us</h5>
                 <p>JavaScript Coffee is a company founded on sleepless nights and caffeine breaks by four software engineers.
                     <br />
@@ -25,7 +25,7 @@ function About() {
                   <br />
                   Our coffee is organic, and environmentally friendly so that you can stay caffeinated with a guilt free conscience.
                 </p>
-            </section>
+            </main>
 
 
         </div>
