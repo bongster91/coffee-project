@@ -54,7 +54,7 @@ function EditForm({ history, match }) {
     return (
         <section>
             <div className="imgBx">
-                <img src={coffeespoon} />
+                <img src={coffeespoon} alt="coffee-spoons" />
                 <div className="contentBx">
                     <div className="formBx">
                         <div className="form">
