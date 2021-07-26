@@ -47,7 +47,7 @@ function Review(props) {
 
                         <div className="review-rating">
                             <p><strong>{review.rating}</strong> out of 5</p>
-                            <img className="cuppa" src={cuppa} />
+                            <img className="cuppa" src={cuppa} alt='cuppa' />
                         </div>
 
                         <button style={buttonStyle} onClick={toggleView}>
