@@ -1,3 +1,6 @@
+DROP DATABASE IF EXISTS coffees_db;
+CREATE DATABASE coffees_db;
+
 \c d3dnhms5chb8uq;
 
 CREATE TABLE coffees (
