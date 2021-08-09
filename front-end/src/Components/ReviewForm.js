@@ -46,7 +46,7 @@ function ReviewForm(props) {
         <div className="add-review">
             {props.children}
             <form onSubmit={handleSubmit}>
-                <label htmlFor='reviewer'>Name</label>
+                <label htmlFor='reviewer'>Name: </label>
                 <input
                     id='reviewer'
                     value={review.reviewer}
@@ -55,8 +55,8 @@ function ReviewForm(props) {
                     onChange={handleTextChange}
                     required
                 />
-
-                <label htmlFor='content'>Review</label>
+                {' '}
+                <label htmlFor='content'>Review: </label>
                 <input
                     id='content'
                     value={review.content}
@@ -65,8 +65,8 @@ function ReviewForm(props) {
                     onChange={handleTextChange}
                     required
                 />
-
-                <label htmlFor='rating'>Rating: 0-5</label>
+                {' '}
+                <label htmlFor='rating'>Rating: 0-5 </label>
                 <input
                     id='rating'
                     value={review.rating}
@@ -77,7 +77,7 @@ function ReviewForm(props) {
                     max='5'
                     required
                 />
-
+                {' '}
                 <button type='submit'>Submit</button>
             </form>
         </div>

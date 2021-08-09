@@ -16,12 +16,10 @@ function Review(props) {
         width: "90px",
         height: "30px",
         marginTop: "70px",
-    }
+    };
 
     return (
         <div>
-
-
             {viewEditForm ? (
                 <ReviewForm
                     reviewDetails={review}
@@ -32,17 +30,16 @@ function Review(props) {
 
                 <div className="review-container">
                     <div className="profile">
+
                         <div className="profile-img">
                             <img src={smileycup} alt="profile-placeholder" />
                         </div>
 
                         <div className="review-box-top">
-                            <h4><span>{review.reviewer} says: </span> <p>{review.content}</p></h4>
-
-                        </div>
-
-                        <div className="review-details">
-
+                            <h4>
+                                <span>{review.reviewer} says: </span> 
+                                <p>{review.content}</p>
+                            </h4>
                         </div>
 
                         <div className="review-rating">
@@ -58,8 +55,8 @@ function Review(props) {
                             Delete
                         </button>
 
-                        </div>
                     </div>
+                </div>
             )}
         </div>
     );

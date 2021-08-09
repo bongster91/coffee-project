@@ -8,8 +8,8 @@ import Reviews from './Reviews';
 const API = apiURL();
 
 const CoffeeDetails = ({ history, match }) => {
-    const [ coffee, setCoffee ] = useState([])
-    const { id } = match.params
+    const [ coffee, setCoffee ] = useState([]);
+    const { id } = match.params;
 
     useEffect(() => {
         axios.get(`${API}/coffees/${id}`)
@@ -44,8 +44,7 @@ const CoffeeDetails = ({ history, match }) => {
             <br />
             <br />
             <br />
-           <img src={coffee.url} alt={coffee.alt} />
-
+           <img className='coffee-details-img' src={coffee.url} alt={coffee.alt} />
 
             <h1>
                 {coffee.name}
@@ -54,17 +53,18 @@ const CoffeeDetails = ({ history, match }) => {
             <h3>{coffee.method}</h3>
             <h3>{coffee.origin}</h3>
 
+            <section className='coffee-details-button'>
+                <Link to='/coffees'>
+                    <button>Back</button>
+                </Link>
 
+                <Link to={`/coffees/${id}/edit`}>
+                    <button>Edit {coffee.name}</button>
+                </Link>
 
-            <Link to='/coffees'>
-                <button>Back</button>
-            </Link>
-
-            <Link to={`/coffees/${id}/edit`}>
-                <button>Edit {coffee.name}</button>
-            </Link>
-
-            <button onClick={handleDelete}>Delete {coffee.name}</button>
+                <button onClick={handleDelete}>Delete {coffee.name}</button>
+            </section>
+ 
             <Reviews />
         </div>
     )

@@ -77,7 +77,7 @@ function Reviews() {
 
   const reviewHeader = {
     fontFamily: "Brooke",
-  }
+  };
 
   return (
     <section className="reviews">
@@ -110,8 +110,8 @@ function Reviews() {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 
 export default Reviews;
