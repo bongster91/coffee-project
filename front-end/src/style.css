@@ -269,6 +269,8 @@ section .contentBx .formBx {
     float: right;
     width: 50%;
     height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 section .contentBx .formBx input {
