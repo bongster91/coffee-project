@@ -2,6 +2,10 @@
 
 ### Overview
 A PERN stack coffee website. Showcasing our knowledge in implementing Express, PostgreSQL, NodeJS and React.
+
+Netlify: https://quizzical-yonath-00eaa3.netlify.app/
+Heroku: https://salty-spire-03163.herokuapp.com/
+
 #### Table of Contents
 - 1. [ Development ](#development)
   * Express
