@@ -1,12 +1,12 @@
 import React from 'react';
 import BrandLabel from "../images/BrandingLabel.png";
-import DevelopersCoffee from "../images/DevelopersCoffee.png";
+import DevelopersCoffee from "../images/DevelopersCoffee+.svg";
 
 export default function Home() {
 
     const imgStyle = {
         width: "100%",
-        marginTop: "60px"
+        // marginTop: "10px"
     }
     return (
             <div className="home-container">

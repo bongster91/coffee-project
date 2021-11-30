@@ -1,10 +1,10 @@
-import AboutLabel from "../images/Pursuit Roasting Company.png"
+import AboutLabel from "../images/Pursuit Roasting Company.svg"
 
 function About() {
 
     const imgStyle = {
         width: "100%",
-        marginTop: "30px",
+        marginTop: "20px",
         backgroundSize: "contain"
     }
 

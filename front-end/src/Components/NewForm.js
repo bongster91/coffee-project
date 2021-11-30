@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import { apiURL } from '../util/apiURL';
 import axios from 'axios';
-import coffeespoon from "../images/coffee-beans-ground-coffee-and-instant-coffee-in-2021-07-19-16-56-44-utc.JPG";
+import coffeespoon from "../images/coffee-beans-ground-coffee-and-instant-coffee-in-2021-07-19-16-56-44-utc.svg";
 
 
 const API = apiURL();
