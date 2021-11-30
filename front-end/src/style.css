@@ -12,6 +12,14 @@ body {
     width: 100%; */
 }
 
+.coffee-spotlight {
+    margin-top: 20px;
+}
+
+.eco-friendly {
+    margin-top: 90px;
+}
+
 .container {
     display: inline;
     width: 1000px;
@@ -104,8 +112,6 @@ body {
 }
 
 .coffee-collection {
-    /* display: flex;
-    flex-wrap: wrap; */
     list-style: none;
 }
 

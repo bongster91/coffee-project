@@ -19,7 +19,7 @@ export default function Home() {
                 </div>
 
 
-                <div>
+                <div className="eco-friendly">
                     <img style={imgStyle} src={BrandLabel} alt='brand-label' />
                 </div>
             </div>
